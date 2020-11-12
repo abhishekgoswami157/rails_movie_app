@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flix</title>
+    <%= csrf_meta_tags %> <%= csp_meta_tag %>
+
+    <!-- css -->
+    <%= stylesheet_link_tag 'application', media: 'all',
+    'data-turbolinks-track': 'reload' %> <%=javascript_pack_tag 'application',
+    'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <h1>Netflix</h1>
+    </header>
+    <div><%= yield %></div>
+    <footer>
+      <h4>Made in <a href="#">The Pragmatic Studio</a></h4>
+    </footer>
+  </body>
+</html>
